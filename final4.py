@@ -6,8 +6,8 @@ import aiohttp
 import io, json, os, re
 
 # ---------------- CONFIG ---------------- #
-#TOKEN = os.environ.get("DISCORD_TOKEN")
-TOKEN = "MTQzNzcyNTExNjgxMjQ5NjkzNw.GPlOrG.uKE2gRs1oN_-PdD5MAMi8wS_Tpq_2PX-Or0lSM"
+TOKEN = os.environ.get("DISCORD_TOKEN")
+
 HASH_DB_FILE = "hash_db.json"
 GUILD_ID = None
 os.makedirs("hash_db", exist_ok=True)
@@ -183,5 +183,6 @@ async def on_ready():
     print("Context menus synced successfully!")
 
 bot.run(TOKEN)
+
 
 
