@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()  # loads .env file
-TOKEN = os.environ.get("DISCORD_TOKEN")
+TOKEN = os.environ.get("dt")
 
 
 HASH_DB_FILE = "hash_db.json"
@@ -190,6 +190,7 @@ async def on_ready():
     print("Context menus synced successfully!")
 
 bot.run(TOKEN)
+
 
 
 
