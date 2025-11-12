@@ -7,14 +7,6 @@ import io, json, os, re
 
 # ---------------- CONFIG ---------------- #
 
-
-from dotenv import load_dotenv
-import os
-
-load_dotenv()  # loads .env file
-TOKEN = os.environ.get("dt")
-
-
 HASH_DB_FILE = "hash_db.json"
 GUILD_ID = None
 os.makedirs("hash_db", exist_ok=True)
@@ -189,7 +181,8 @@ async def on_ready():
         await bot.tree.sync()
     print("Context menus synced successfully!")
 
-bot.run(TOKEN)
+bot.run(os.environ.get("dt"))
+
 
 
 
