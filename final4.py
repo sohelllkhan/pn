@@ -14,7 +14,6 @@ import os
 load_dotenv()  # loads .env file
 TOKEN = os.environ.get("DISCORD_TOKEN")
 
-TOKEN = os.environ.get("DISCORD_TOKEN")
 
 HASH_DB_FILE = "hash_db.json"
 GUILD_ID = None
@@ -191,6 +190,7 @@ async def on_ready():
     print("Context menus synced successfully!")
 
 bot.run(TOKEN)
+
 
 
 
