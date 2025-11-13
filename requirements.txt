@@ -1,6 +1,9 @@
-discord.py
+discord.py==2.4.0
+aiohttp
+Pillow
 torch
 torchvision
-Pillow
-imagehash
-aiohttp
+torchaudio
+ultralytics
+git+https://github.com/openai/CLIP.git
+numpy
